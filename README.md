@@ -17,20 +17,6 @@ BOSS is a full-stack, mobile-first Business Operating System combining:
 - **Double-entry accounting ledger** — GL, Chart of Accounts (LWS/LTB series)
 - **Logistics tracker** — Freight, TLC/FSMA-204 barcode labels, SMS alerts via Telnyx
 
-## Structure
-
-```
-businessoperatingsystemsoftware/
-├── apps/
-│   └── mobile/          # Expo React Native (iOS + Android + Web)
-├── packages/
-│   ├── api/             # Railway Node.js Express API server
-│   ├── db/              # Supabase SQL migrations (PostgreSQL 15)
-│   └── scripts/         # Airtable → Supabase migration scripts
-├── docs/                # Architecture, schema docs, runbooks
-└── .github/workflows/   # CI/CD (Railway + EAS)
-```
-
 ## Quick Start
 
 ```bash
@@ -38,7 +24,6 @@ git clone https://github.com/anthonyrunbusinessrun/businessoperatingsystemsoftwa
 cd businessoperatingsystemsoftware
 npm install
 cp .env.example .env
-# Fill in Supabase, Railway, Telnyx credentials then:
-npm run api        # Start Railway API server
-npm run mobile     # Start Expo app
+npm run api
+npm run mobile
 ```
