@@ -1,0 +1,12 @@
+{
+  "name": "boss-platform",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "mobile": "npm run start --workspace=apps/mobile",
+    "api": "npm run dev --workspace=packages/api",
+    "migrate": "npm run migrate --workspace=packages/scripts"
+  },
+  "devDependencies": { "typescript": "^5.3.0" }
+}
